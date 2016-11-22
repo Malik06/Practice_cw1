@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daily Blogs</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Daily Blogs</h1>
+  </header>
+
+<%= link_to"Home", root_path %>
+<%= link_to"About Us", welcome_about_path %>
+<%= link_to"Menu", welcome_menu_path %>
+<%= link_to"Contact Us", welcome_contact_path %>
+<%= link_to"Login" , root_path %>
+
+<%= yield %>
+
+</body>
+</html>
